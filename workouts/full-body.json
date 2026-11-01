@@ -20,7 +20,7 @@
       ]
     },
     {
-      "name": "Chest-supported dumbbell row",
+      "name": "Seated cable row",
       "sets": [
         {
           "reps": 10,
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "name": "Dumbbell bench press",
+      "name": "Assisted push ups",
       "sets": [
         {
           "reps": 10,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "name": "Kettlebell clean to reverse lunge",
+      "name": "Glute bridge",
       "sets": [
         {
           "reps": 6,
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "name": "Bear plank dumbbell drag",
+      "name": "Plank dumbbell drag",
       "sets": [
         {
           "reps": 8,
