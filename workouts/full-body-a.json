@@ -1,0 +1,30 @@
+{
+  "id": "full-body-a",
+  "name": "Full Body A",
+  "exercises": [
+    {
+      "name": "Sit-ups",
+      "sets": [
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 }
+      ]
+    },
+    {
+      "name": "One-legged RDL",
+      "sets": [
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 }
+      ]
+    },
+    {
+      "name": "Cable step-ups",
+      "sets": [
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 },
+        { "reps": 10, "weight": 0 }
+      ]
+    }
+  ]
+}
