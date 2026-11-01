@@ -37,24 +37,7 @@
       ]
     },
     {
-      "name": "Leg press",
-      "sets": [
-        {
-          "reps": 10,
-          "weight": 0
-        },
-        {
-          "reps": 10,
-          "weight": 0
-        },
-        {
-          "reps": 10,
-          "weight": 0
-        }
-      ]
-    },
-    {
-      "name": "Cossack squat",
+      "name": "Glute bridge",
       "sets": [
         {
           "reps": 8,
@@ -71,7 +54,7 @@
       ]
     },
     {
-      "name": "Contralateral suitcase step-up",
+      "name": "Cable step-up",
       "sets": [
         {
           "reps": 8,
@@ -106,6 +89,40 @@
     },
     {
       "name": "Heavy suitcase march",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Sit ups",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Around the world",
       "sets": [
         {
           "reps": 10,
