@@ -1,0 +1,125 @@
+{
+  "id": "upper",
+  "name": "Upper",
+  "exercises": [
+    {
+      "name": "Lat pulldown",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Incline dumbbell press",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Seated cable row",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Half-kneeling one-arm landmine press",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Kettlebell overhead march",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Renegade row",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Cable chop",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    }
+  ]
+}

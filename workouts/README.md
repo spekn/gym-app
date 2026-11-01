@@ -10,4 +10,8 @@ Copy `full-body-a.json` to a new JSON file to define another workout.
 - The sample uses 10 reps and 0 kg as editable placeholders, not a prescribed training load.
 - Templates contain starting values only. Completion and session history belong in saved app data.
 
-The app does not load these files yet. Workout selection and loading are a separate implementation step.
+The top-bar selector loads Full Body, Upper, Lower, and the original Full Body A. Each workout retains its own edited sets and completion state in browser storage. The last selected workout is restored on reopening.
+
+Serve the repository through GitHub Pages or a local HTTP server (`python -m http.server 8000` from the repository folder). Opening `index.html` directly cannot fetch JSON templates.
+
+To register another template, add an option to `#workout-select` in `index.html` with its ID as the value. The app loads `workouts/<id>.json`. Keep IDs stable so saved workout data remains associated with the correct template.

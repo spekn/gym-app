@@ -1,0 +1,125 @@
+{
+  "id": "full-body",
+  "name": "Full Body",
+  "exercises": [
+    {
+      "name": "Goblet squat",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Chest-supported dumbbell row",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Dumbbell bench press",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Kettlebell clean to reverse lunge",
+      "sets": [
+        {
+          "reps": 6,
+          "weight": 0
+        },
+        {
+          "reps": 6,
+          "weight": 0
+        },
+        {
+          "reps": 6,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Landmine rotational press",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Bear plank dumbbell drag",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Uneven farmer march",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    }
+  ]
+}

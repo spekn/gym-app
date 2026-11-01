@@ -1,0 +1,125 @@
+{
+  "id": "lower",
+  "name": "Lower",
+  "exercises": [
+    {
+      "name": "Romanian deadlift",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Bulgarian split squat",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Leg press",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Cossack squat",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Contralateral suitcase step-up",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Single-leg RDL to knee drive",
+      "sets": [
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        },
+        {
+          "reps": 8,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "name": "Heavy suitcase march",
+      "sets": [
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        },
+        {
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    }
+  ]
+}
