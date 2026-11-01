@@ -1,123 +1,40 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gym Log</title>
+<meta name="theme-color" content="#111312">
+<title>FORM — Your workout</title>
 <style>
-body{font:16px system-ui;background:#102019;color:#eef5ef;
-max-width:700px;margin:40px auto;padding:20px}
-section{background:#20372a;padding:24px;border-radius:16px;margin:24px 0}
-label{display:block;margin:16px 0}
-input,button{font:inherit;padding:10px;border-radius:8px;border:0}
-input{display:block;margin-top:6px;box-sizing:border-box;width:100%}
-button{background:#bcf882;cursor:pointer}
-article{border-top:1px solid #678571;padding:16px 0}
-p{line-height:1.6}
+:root{color-scheme:dark;--bg:#111312;--panel:#191c1a;--line:#303630;--muted:#929c93;--text:#eff3eb;--lime:#d3fa8b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--lime);outline-offset:4px}button:disabled{cursor:not-allowed;opacity:.3}header{border-bottom:1px solid var(--line)}.nav{max-width:1160px;margin:auto;height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 32px}.brand{font-size:25px;font-weight:900;letter-spacing:-1px}.brand span{color:var(--lime)}.nav-note{color:var(--muted);font-size:13px}main{max-width:1160px;margin:auto;padding:54px 32px 36px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--lime);font-size:11px;font-weight:700}.intro{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:14px 0 32px}h1{font-size:clamp(36px,5vw,56px);line-height:1.05;letter-spacing:-2px;margin:0 0 16px;font-weight:650}.subtitle{color:var(--muted);line-height:1.6;margin:0}.badge{white-space:nowrap;border:1px solid var(--line);padding:10px 14px;border-radius:30px;color:#c5cdc2;font-size:12px}.badge::before{content:'●';color:var(--lime);margin-right:8px}.overview{display:flex;gap:40px;padding:22px 0 30px;border-bottom:1px solid var(--line);margin-bottom:32px}.stat strong{font-size:24px;font-weight:550}.stat span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:5px}.section-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.section-label h2{font-size:14px;font-weight:500;margin:0}.section-label span{font-size:12px;color:var(--muted)}.exercise{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:16px}.exercise-head{display:flex;gap:14px;align-items:center;margin-bottom:24px}.number{height:38px;width:38px;border:1px solid #414b3d;color:var(--lime);display:grid;place-items:center;border-radius:11px;font-size:12px;font-weight:600}.exercise h3{font-size:18px;letter-spacing:-.3px;margin:0 0 5px;font-weight:550}.exercise-head p{font-size:12px;color:var(--muted);margin:0}.count{margin-left:auto;color:var(--muted);font-size:12px}.sets{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 12px;scrollbar-color:#4a5541 transparent}.set{background:#121613;border:1px solid var(--line);border-radius:12px;padding:16px;flex:0 0 210px;transition:border-color .2s}.set.done{border-color:#8ea65c;background:#20291a}.set-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:17px}.set-title{text-transform:uppercase;letter-spacing:1.2px;font-size:10px;font-weight:700;color:#b4bcb0}.remove{background:none;border:0;color:#929c93;font-size:20px;padding:0 4px;line-height:1}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{color:var(--muted);font-size:11px}input{display:block;width:100%;min-width:0;margin-top:7px;background:#202620;border:1px solid #374032;border-radius:7px;color:var(--text);font-size:21px;font-weight:500;padding:10px 8px;appearance:textfield}input::-webkit-inner-spin-button{appearance:none}.complete{width:100%;margin-top:14px;border:1px solid #374032;background:transparent;color:#afb9a5;border-radius:7px;font-size:11px;padding:9px}.done .complete{background:var(--lime);border-color:var(--lime);color:#223016}.add{flex:0 0 100px;border:1px dashed #444f3c;border-radius:12px;background:transparent;color:#afbd9e;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;font-size:11px;min-height:180px}.add span{font-size:25px;font-weight:300}.add:hover{background:#252e20;border-color:var(--lime)}footer{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px;padding:18px 0}#status{color:var(--lime)}.progress{height:3px;background:#2d3529;border-radius:4px;margin-top:24px;overflow:hidden}.progress div{background:var(--lime);height:100%;transition:width .25s}#finish-note{color:var(--lime);margin:14px 0 0;font-size:13px} @media(min-width:1000px){.set{flex:1 0 200px;max-width:260px}}@media(max-width:600px){.nav{height:70px;padding:0 20px}.nav-note{font-size:11px}main{padding:32px 16px 20px}.intro{display:block}.badge{display:inline-block;margin-top:18px}.overview{gap:30px}.exercise{padding:18px 12px}.exercise-head{padding:0 4px}.set{flex-basis:190px}.section-label span{font-size:10px}footer{flex-direction:column;gap:8px}h1{letter-spacing:-1.5px}}
 </style>
 </head>
 <body>
-<h1>Gym Log</h1>
-<p>Track your exercises, sets, reps, and weights.</p>
-<section>
-<h2>Log an exercise</h2>
-<form id="form">
-<label>Date<input id="date" type="date" required></label>
-<label>Exercise<input id="exercise" required maxlength="100"></label>
-<label>Sets<input id="sets" type="number" min="1" max="100" value="3" required></label>
-<label>Reps per set<input id="reps" type="number" min="1" max="1000" value="10" required></label>
-<label>Weight (kg)<input id="weight" type="number" min="0" max="2000" step="0.1" value="0" required></label>
-<button>Save exercise</button>
-</form>
-<p id="status" role="status"></p>
-</section>
-<section>
-<h2>Workout history</h2>
-<p>Records stay in this browser on this device. Clearing browser data can erase them.</p>
-<div id="history"></div>
-</section>
+<header><div class="nav"><div class="brand">FORM<span> /</span></div><div class="nav-note">A little stronger, every session.</div></div></header>
+<main>
+<div class="eyebrow">Your training space</div>
+<div class="intro"><div><h1>Put in the work.</h1><p class="subtitle">Three exercises. Your pace. Make every set count.</p></div><div class="badge">Full body · Workout A</div></div>
+<div class="overview"><div class="stat"><strong>03</strong><span>Exercises</span></div><div class="stat"><strong id="total">09</strong><span>Total sets</span></div><div class="stat"><strong id="completed">00</strong><span>Completed</span></div></div>
+<div class="section-label"><h2>Your exercises</h2><span>Adjust each set to suit your session</span></div>
+<div id="exercises"></div>
+<div class="progress" role="progressbar" aria-label="Workout completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div>
+<p id="finish-note" role="status"></p>
+<footer><span>KG for weights · 0 for bodyweight · Reps per side for single-leg exercises</span><span id="status" role="status" aria-live="polite">Changes save on this device</span></footer>
+</main>
 <script>
-"use strict";
-const field = id => document.getElementById(id);
-const key = "gym-log-v1";
-let records = [];
-let available = true;
-try {
-  records = JSON.parse(localStorage.getItem(key) || "[]");
-  if (!Array.isArray(records) || !records.every(r =>
-    r && typeof r.exercise === "string" &&
-    typeof r.date === "string" &&
-    [r.sets,r.reps,r.weight].every(Number.isFinite)
-  )) throw new Error("Invalid records");
-} catch {
-  available = false;
-  records = [];
-  field("status").textContent = "Browser storage is unavailable or saved data could not be read. Saving is disabled.";
-  field("form").querySelector("button").disabled = true;
-}
-const now = new Date();
-field("date").value = now.getFullYear() + "-" +
-  String(now.getMonth()+1).padStart(2,"0") + "-" +
-  String(now.getDate()).padStart(2,"0");
-
-function save(next) {
-  if (!available) return false;
-  try {
-    localStorage.setItem(key, JSON.stringify(next));
-    records = next;
-    return true;
-  } catch {
-    field("status").textContent = "Could not save. Browser storage may be disabled or full.";
-    return false;
-  }
-}
-
-function render() {
-  field("history").replaceChildren();
-  if (!records.length) {
-    field("history").textContent = "No exercises logged yet.";
-  }
-  records.forEach((record,index) => {
-    const row = document.createElement("article");
-    const title = document.createElement("strong");
-    title.textContent = record.exercise;
-    const detail = document.createElement("p");
-    detail.textContent = record.date + " | " +
-      record.sets + " sets x " + record.reps +
-      " reps | " + record.weight + " kg";
-    const button = document.createElement("button");
-    button.textContent = "Delete";
-    button.onclick = () => {
-      if (confirm("Delete this exercise?") &&
-          save(records.filter((_,i) => i !== index))) {
-        render();
-      }
-    };
-    row.append(title,detail,button);
-    field("history").prepend(row);
-  });
-}
-
-field("form").onsubmit = event => {
-  event.preventDefault();
-  const exercise = field("exercise").value.trim();
-  if (!exercise) {
-    field("status").textContent = "Enter an exercise name.";
-    return;
-  }
-  const record = {
-    date: field("date").value,
-    exercise,
-    sets: Number(field("sets").value),
-    reps: Number(field("reps").value),
-    weight: Number(field("weight").value)
-  };
-  if (save([...records,record])) {
-    render();
-    field("exercise").value = "";
-    field("status").textContent = "Exercise saved.";
-  }
-};
+'use strict';
+const key='form-workout-a-v1';
+const names=['Sit-ups','One-legged RDL','Cable step-ups'];
+const notes=['Core · Bodyweight','Posterior chain · Single leg','Lower body · Cable'];
+const fresh=()=>names.map(name=>({name,sets:Array.from({length:3},()=>({reps:10,weight:0,done:false}))}));
+let workout=fresh(),storageOK=true;
+const status=document.getElementById('status');
+try{const raw=localStorage.getItem(key);if(raw){const data=JSON.parse(raw);if(!Array.isArray(data)||data.length!==3||!data.every((e,i)=>e.name===names[i]&&Array.isArray(e.sets)&&e.sets.length>=1&&e.sets.every(s=>Number.isInteger(s.reps)&&s.reps>=1&&s.reps<=1000&&Number.isFinite(s.weight)&&s.weight>=0&&s.weight<=2000&&typeof s.done==='boolean')))throw Error('Invalid saved workout');workout=data;}}catch{storageOK=false;status.textContent='Saved data unavailable. Changes will last only this session.';}
+function save(){if(!storageOK)return;try{localStorage.setItem(key,JSON.stringify(workout));status.textContent='Saved on this device';}catch{status.textContent='Could not save. Keep this page open to retain changes.';}}
+function summary(){const sets=workout.flatMap(e=>e.sets),done=sets.filter(s=>s.done).length;document.getElementById('total').textContent=String(sets.length).padStart(2,'0');document.getElementById('completed').textContent=String(done).padStart(2,'0');const percent=Math.round(done/sets.length*100);document.getElementById('progress-fill').style.width=percent+'%';document.querySelector('[role="progressbar"]').setAttribute('aria-valuenow',percent);document.getElementById('finish-note').textContent=done===sets.length?'Session complete. Nice work showing up.':'';}
+function render(focus){const root=document.getElementById('exercises');root.replaceChildren();workout.forEach((exercise,ei)=>{const section=document.createElement('section');section.className='exercise';section.setAttribute('aria-labelledby','exercise-'+ei);section.innerHTML=`<div class="exercise-head"><div class="number">0${ei+1}</div><div><h3 id="exercise-${ei}">${exercise.name}</h3><p>${notes[ei]}</p></div><span class="count">${exercise.sets.length} sets</span></div><div class="sets"></div>`;const row=section.querySelector('.sets');exercise.sets.forEach((set,si)=>{const card=document.createElement('div');card.className='set'+(set.done?' done':'');card.innerHTML=`<div class="set-top"><span class="set-title">Set ${String(si+1).padStart(2,'0')}</span><button type="button" class="remove" aria-label="Remove set ${si+1} from ${exercise.name}" ${exercise.sets.length===1?'disabled':''}>×</button></div><div class="fields"><label>Reps<input id="reps-${ei}-${si}" aria-label="${exercise.name}, set ${si+1}, reps" type="number" min="1" max="1000" step="1" value="${set.reps}" required inputmode="numeric"></label><label>Weight · kg<input aria-label="${exercise.name}, set ${si+1}, weight in kilograms" type="number" min="0" max="2000" step="0.1" value="${set.weight}" required inputmode="decimal"></label></div><button type="button" class="complete" aria-pressed="${set.done}">${set.done?'✓ Completed':'○ Mark complete'}</button>`;
+card.querySelectorAll('input').forEach((input,fi)=>{input.addEventListener('input',()=>{if(!input.validity.valid)return;set[fi===0?'reps':'weight']=input.valueAsNumber;save();});input.addEventListener('blur',()=>{if(!input.validity.valid){input.value=set[fi===0?'reps':'weight'];status.textContent='Enter valid reps (1–1000) and weight (0–2000 kg).';}});});
+card.querySelector('.remove').onclick=()=>{if(exercise.sets.length<=1)return;exercise.sets.splice(si,1);save();render(`add-${ei}`);};card.querySelector('.complete').onclick=event=>{if(![...card.querySelectorAll('input')].every(input=>input.reportValidity()))return;set.done=!set.done;card.classList.toggle('done',set.done);event.currentTarget.textContent=set.done?'✓ Completed':'○ Mark complete';event.currentTarget.setAttribute('aria-pressed',String(set.done));save();summary();};row.append(card);});const add=document.createElement('button');add.type='button';add.id=`add-${ei}`;add.className='add';add.setAttribute('aria-label','Add set to '+exercise.name);add.innerHTML='<span aria-hidden="true">+</span>Add set';add.onclick=()=>{const last=exercise.sets.at(-1);exercise.sets.push({reps:last.reps,weight:last.weight,done:false});save();render(`reps-${ei}-${exercise.sets.length-1}`);};row.append(add);root.append(section);});summary();if(focus)document.getElementById(focus)?.focus();}
 render();
 </script>
 </body>
