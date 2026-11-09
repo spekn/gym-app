@@ -19,9 +19,16 @@
         }
       ],
       "alternatives": [
-        "Dumbbell front squat",
-        "Kettlebell goblet squat"
-      ]
+        {
+          "id": "exercise-dumbbell-front-squat",
+          "name": "Dumbbell front squat"
+        },
+        {
+          "id": "exercise-kettlebell-goblet-squat",
+          "name": "Kettlebell goblet squat"
+        }
+      ],
+      "exerciseId": "exercise-goblet-squat"
     },
     {
       "name": "Seated cable row",
@@ -38,7 +45,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-seated-cable-row"
     },
     {
       "name": "Assisted push ups",
@@ -55,7 +63,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-assisted-push-ups"
     },
     {
       "name": "Glute bridge",
@@ -74,8 +83,12 @@
         }
       ],
       "alternatives": [
-        "Cable kickbacks"
-      ]
+        {
+          "id": "exercise-cable-kickbacks",
+          "name": "Cable kickbacks"
+        }
+      ],
+      "exerciseId": "exercise-glute-bridge"
     },
     {
       "name": "Landmine rotational press",
@@ -94,8 +107,12 @@
         }
       ],
       "alternatives": [
-        "Russian twists (plated)"
-      ]
+        {
+          "id": "exercise-russian-twists-plated",
+          "name": "Russian twists (plated)"
+        }
+      ],
+      "exerciseId": "exercise-landmine-rotational-press"
     },
     {
       "name": "Plank dumbbell drag",
@@ -112,7 +129,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-plank-dumbbell-drag"
     },
     {
       "name": "Uneven farmer march",
@@ -129,7 +147,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-uneven-farmer-march"
     }
   ]
 }

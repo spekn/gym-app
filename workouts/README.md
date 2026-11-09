@@ -32,6 +32,22 @@ Add an optional `alternatives` list to an exercise:
 }
 ```
 
-The Alternatives button appears beside How To only when the list is nonempty. Selecting an alternative changes the exercise name and its guide, keeps the current set count/reps/weight, and clears completion. You can choose the original exercise again. Names may also be written as objects such as `{ "name": "Dumbbell front squat" }`.
+The Alternatives option appears in the three-dot menu only when the list is nonempty. Selecting an alternative changes the name and guide, loads its latest completed sets (or template values if it has no history), and clears completion. You can choose the original exercise again. Names may also be written as objects such as `{ "name": "Dumbbell front squat" }`.
 
 An optional exercise `id` must be unique within the workout and remain stable when editing templates. Without IDs, identity follows the exercise's original template position; changing template order later can associate old edits with different exercises. Set stable IDs before reorganizing template definitions. Saved data from the previous app version is migrated when the template still matches; unreadable data is protected rather than overwritten.
+
+
+## Sessions and history
+
+- **Start workout** creates a dated session. Previous completed sets for each exercise supply its set count, reps, and weight. Other template or undated legacy values remain the starting point when there is no finished history. Completion starts unchecked.
+- **Finish workout** archives a snapshot, with confirmation. At least one completed set is required. Incomplete sets are excluded from history display and future prefilling. Editing a new session never alters archived sessions.
+- Unfinished sessions resume after closing/reopening, including order, names, values, and completion. Different workouts can have separate unfinished sessions.
+- The three-dot menu's **History** shows completed sets from finished sessions, newest first. **Use these values** copies a history entry to the active exercise after confirmation and clears completion.
+- Renaming preserves exercise identity. `exerciseId` is the stable history identity and can be shared across workouts for the same exercise. Exercise `id` identifies its position/slot in the workout and must also stay stable if supplied. Existing generated slot IDs are retained during migration.
+- Alternatives can be strings, or objects with a stable history ID: `{ "id": "exercise-cable-kickbacks", "name": "Cable kickbacks" }`. Matching IDs share history; each alternative normally has its own identity. Keep IDs unchanged when updating display names.
+- **Export backup** downloads a JSON backup of finished sessions, active sessions, workout presets, and available legacy values. **Import backup** validates the file and, after confirmation, replaces current stored training data. Export first to keep a copy before importing. Invalid files leave existing data untouched.
+- Everything stays in this browser/device's localStorage, under `form-training-v1`. There is no server sync. Clearing site data removes it. Legacy `form-workout-*-v2` values remain untouched and supply starting values when upgrading; no historical dates are invented.
+
+## Browser checks
+
+With Node.js, Playwright, and Chromium available, run `node tests/sessions.cjs` from the repository root. Set `CHROMIUM_PATH` if Chromium is not `/usr/bin/chromium`. The suite serves the app locally and tests real session, persistence, history, backup, migration, and responsive flows. Guide requests are stubbed; it does not validate the external RepDB service.

@@ -17,7 +17,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-romanian-deadlift"
     },
     {
       "name": "Bulgarian split squat",
@@ -34,7 +35,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-bulgarian-split-squat"
     },
     {
       "name": "Glute bridge",
@@ -53,8 +55,12 @@
         }
       ],
       "alternatives": [
-        "Cable kickbacks"
-      ]
+        {
+          "id": "exercise-cable-kickbacks",
+          "name": "Cable kickbacks"
+        }
+      ],
+      "exerciseId": "exercise-glute-bridge"
     },
     {
       "name": "Cable step-up",
@@ -71,7 +77,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-cable-step-up"
     },
     {
       "name": "Single-leg RDL to knee drive",
@@ -88,7 +95,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-single-leg-rdl-to-knee-drive"
     },
     {
       "name": "Heavy suitcase march",
@@ -105,7 +113,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-heavy-suitcase-march"
     },
     {
       "name": "Sit ups",
@@ -122,7 +131,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-sit-ups"
     },
     {
       "name": "Around the world",
@@ -139,7 +149,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-around-the-world"
     }
   ]
 }

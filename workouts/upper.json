@@ -17,7 +17,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-lat-pulldown"
     },
     {
       "name": "Incline dumbbell press",
@@ -34,7 +35,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-incline-dumbbell-press"
     },
     {
       "name": "Seated cable row",
@@ -51,7 +53,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-seated-cable-row"
     },
     {
       "name": "Half-kneeling one-arm landmine press",
@@ -70,8 +73,12 @@
         }
       ],
       "alternatives": [
-        "Standing one-arm shoulder press"
-      ]
+        {
+          "id": "exercise-standing-one-arm-shoulder-press",
+          "name": "Standing one-arm shoulder press"
+        }
+      ],
+      "exerciseId": "exercise-half-kneeling-one-arm-landmine-press"
     },
     {
       "name": "Sit up",
@@ -88,7 +95,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-sit-up"
     },
     {
       "name": "Renegade row",
@@ -105,7 +113,8 @@
           "reps": 8,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-renegade-row"
     },
     {
       "name": "Cable chop",
@@ -122,7 +131,8 @@
           "reps": 10,
           "weight": 0
         }
-      ]
+      ],
+      "exerciseId": "exercise-cable-chop"
     }
   ]
 }
