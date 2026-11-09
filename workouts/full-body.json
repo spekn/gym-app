@@ -17,6 +17,10 @@
           "reps": 10,
           "weight": 0
         }
+      ],
+      "alternatives": [
+        "Dumbbell front squat",
+        "Kettlebell goblet squat"
       ]
     },
     {
@@ -68,6 +72,9 @@
           "reps": 6,
           "weight": 0
         }
+      ],
+      "alternatives": [
+        "Cable kickbacks"
       ]
     },
     {
@@ -85,6 +92,9 @@
           "reps": 8,
           "weight": 0
         }
+      ],
+      "alternatives": [
+        "Russian twists (plated)"
       ]
     },
     {
